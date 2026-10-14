@@ -1,0 +1,23 @@
+# FixitAI scoring weights
+# Si = w_match * match_score + w_evidence * evidence_score
+#      + w_context * context_score + w_importance * importance_score
+# All weights must sum to 1.0
+
+scoring:
+  w_match:      0.40   # semantic similarity score
+  w_evidence:   0.30   # evidence attribution quality
+  w_context:    0.15   # surrounding context relevance
+  w_importance: 0.15   # requirement importance (required > preferred)
+
+importance:
+  required:  1.0
+  preferred: 0.5
+
+# Sentence-transformer model for embedding
+embedding_model: "all-MiniLM-L6-v2"
+
+# OpenAI model for requirement extraction and direct-scoring baseline
+llm_model: "gpt-4o"
+
+# Top-K for FAISS nearest-neighbour retrieval
+faiss_top_k: 5

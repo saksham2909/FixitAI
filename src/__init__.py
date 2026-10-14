@@ -1,0 +1,1 @@
+"""FixitAI — src package."""

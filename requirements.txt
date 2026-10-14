@@ -1,0 +1,32 @@
+# FixitAI dependencies
+# Install with: pip install -r requirements.txt
+
+# --- Resume parsing ---
+pymupdf>=1.24.0          # PDF parsing (fitz)
+python-docx>=1.1.0       # DOCX parsing
+
+# --- LLM + schema ---
+openai>=1.30.0
+pydantic>=2.7.0
+
+# --- Semantic matching ---
+sentence-transformers>=3.0.0
+faiss-cpu>=1.8.0          # use faiss-gpu manually if CUDA is available
+
+# --- Disk cache (LLM call caching) ---
+diskcache>=5.6.0
+
+# --- UI ---
+streamlit>=1.35.0
+
+# --- Evaluation / metrics ---
+scipy>=1.13.0
+numpy>=1.26.0
+pandas>=2.2.0
+
+# --- Utilities ---
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+
+# --- Testing ---
+pytest>=8.2.0

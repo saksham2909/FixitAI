@@ -1,0 +1,39 @@
+# === Secrets ===
+.env
+
+# === Disk cache ===
+cache/
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# === Virtual environments ===
+.venv/
+venv/
+env/
+
+# === IDEs ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === Data (raw uploads – keep samples by explicitly git-adding them) ===
+data/raw/
+
+# === Test artifacts ===
+.pytest_cache/
+htmlcov/
+.coverage
